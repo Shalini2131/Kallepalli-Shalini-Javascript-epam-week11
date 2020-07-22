@@ -1,0 +1,164 @@
+.main{
+    margin-left:500px;
+    margin-top: 100px;
+    width:300px;
+    height:450px;
+    background-color:black;
+}   
+.b1{
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    height:40px;
+    width:298px;
+    background-color:mediumturquoise;
+}
+.sign-in{
+    color:white;
+    text-align: center;
+    font-size:20px;
+    position: fixed;
+    margin-top: 10px;
+    margin-left:50px;
+    height:30px;
+    width:200px;
+    
+}
+.button {
+  
+  background-color:mediumturquoise;
+  border: none;
+  color: white;
+  padding-left:240px;
+  font-size:20px;
+  cursor: pointer;
+}
+input[type="button"] {
+        font-size: 16px;
+        background: skyblue;
+        border: 1px solid skyblue;
+        color: #4e4d4b;
+        font-weight: bold;
+        cursor: pointer;
+        width: 100%;
+        border-radius: 5px;
+        padding: 10px 0;
+        outline: none;
+      }
+
+.b2{
+    height:410px;
+    width:298px;
+    background-color: white;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+#mail{
+  height: 30px;
+  width:260px;
+  padding-left: 7pt;
+  margin-top: 10px;
+  margin-left: 10px;
+  border: 1px solid #e6e6e6;
+  background: #f5f5f5 url("envelope.jpg");
+  background-size:30px;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+#password{
+  height: 30px;
+  width:260px;
+  padding-left:7pt;
+  margin-top: 10px;
+  margin-left: 10px;
+  border: 1px solid #e6e6e6;
+  background: #f5f5f5 url("unlock.png");
+  background-size:30px;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+.signin-butn{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  height:40px;
+  width:275px;
+  font-size: 10pt;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color:mediumturquoise;
+  color:white;
+  border-radius: 5px;
+}
+.forgotpassword{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:8pt;
+    font-weight: bold;
+    margin-left: 10pt;
+    margin-top: 5px;
+    float:left;
+    color:rgb(148, 146, 146);
+}
+.register{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    font-weight: bold;
+    margin-top:5px;
+    float:right;
+    margin-right: 10pt;
+    color:rgb(148, 146, 146);
+}
+.vl {
+  margin-top:50px;
+  display:flex;
+}
+.line{
+  margin-left:10px;
+  border: 1px solid #ddd;
+  height:0%;
+  width:120px;
+}
+.or{
+  margin-top:-9px;
+  margin-left:7px;
+  color: gray;
+  opacity: 0.5;
+}
+.btn {
+  width: 90%;
+  padding: 6px;
+  border: none;
+  border-radius: 4px;
+  margin-top:10px;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+.fb {
+  background-color: #3B5998;
+  color: white;
+  margin-left: 5pt;
+}
+.google {
+  background-color: #dd4b39;
+  color: white;
+  margin-left: 5pt;
+}
+.epam{
+    font-family:Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    margin-top:35px;
+    margin-left:5pt;
+    text-align: center;
+    border-top-left-radius: 5pt;
+    border-top-right-radius: 5pt;
+    border-bottom-left-radius: 5pt;
+    border-bottom-right-radius: 5pt;
+    width: 89%;
+    padding: 7px;
+    background-color:yellowgreen;
+    color:white;
+}

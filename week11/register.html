@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="register.css">
+    <title>Register Page</title>
+    <script>
+        function validate(){
+            var mail=document.getElementById("e");
+            var password=document.getElementById("confirmPassword");
+            if(mail.value!=null && password.value!=null)
+            {
+                alert("Login successfully");
+                location.reload();
+            }
+            else{
+                alert("Fill the details completely!! Check again!!!");
+            }
+        }
+        function checkFields(inputId, errorid) {
+        var fieldId = document.getElementById(inputId).value;
+        if (fieldId == "") {
+          document.getElementById(errorid).innerHTML = "Field is Empty! Fill this field";
+        } else {
+          document.getElementById(errorid).innerHTML = "";
+        }
+      }
+
+      function checkEmail() {
+        var email = document.getElementById("e").value;
+        var atpos = email.indexOf("@");
+        var dotpos = email.lastIndexOf(".");
+
+        if (atpos < 4 || dotpos < atpos + 3) {
+          document.getElementById("error2").innerHTML = "Invalid Email !!";
+        } else {
+          document.getElementById("error2").innerHTML = "";
+        }
+      }
+    </script>
+</head>
+ <body>
+    <div class="main">
+      <h2><center>User Registration</center></h2>
+
+      <div id="row">
+        <div class="col">First Name</div>
+        <div class="col">
+          <input
+            type="text"
+            id="firstName"
+          />
+        </div>
+        <div class="col" id="error" style="color: red;"></div>
+      </div>
+
+      <div id="row">
+        <div class="col">Last Name</div>
+        <div class="col">
+          <input
+            type="text"
+            id="lastname"
+          />
+        </div>
+        <div class="col" id="error1" style="color: red;"></div>
+      </div>
+
+      <div id="row">
+        <div class="col">Email Id</div>
+        <div class="col">
+          <input type="text" id="e" onblur="checkEmail()" />
+        </div>
+        <div class="col" id="error2" style="color: red;"></div>
+      </div>
+
+      <div id="row">
+        <div class="col">Password</div>
+        <div class="col">
+          <input
+            type="password"
+            id="password"
+            onblur="checkFields('password','error3')"
+          />
+        </div>
+        <div class="col" id="error3" style="color: red;"></div>
+      </div>
+
+      <div id="row">
+        <div class="col">Confirm Password</div>
+        <div class="col">
+          <input
+            type="password"
+            id="confirmPassword"
+            onblur="checkFields('confirmPassword','error4')"
+          />
+        </div>
+        <div class="col" style="color: red;" id="error4"></div>
+      </div>
+        <div class="col" style="color: red;" id="error5"></div>
+      <div style="display: flex; justify-content: center; border: 0px;">
+        <input type="button" value="Submit" onclick="validate()"></button>
+      </div>
+    </div>
+  </body>
+</html>

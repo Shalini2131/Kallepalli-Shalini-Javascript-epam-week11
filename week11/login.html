@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="login.css">
+        <meta name="viewport" content="width=device-width ,initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>HTML & CSS </title>
+        <script>
+          var attempt = 3; // Variable to count number of attempts.
+
+      function validate() {
+        var email= document.getElementById("mail");
+        var password = document.getElementById("password");
+        if (email.value == "admin@123.com" && password.value == "123456") {
+          alert("Login successfully");
+          email.innerHTML = "";
+          password.innerHTML = "";
+          location.reload();
+        } else {
+          attempt--; //
+          alert("You have left " + attempt + " attempt;");
+
+          if (attempt == 0) {
+            document.getElementById("email").disabled = true;
+            document.getElementById("password").disabled = true;
+            document.getElementById("submit").disabled = true;
+            return false;
+          }
+        }
+      }
+        </script>
+    </head>
+    <body>
+        <div class="main">
+            <div class="b1">
+                <img src="epam_logo.jpg" alt="Avatar" style="width: 39px;border-radius: 50%;float: left;">
+                <div class="sign-in">
+                      Sign in
+                </div>
+                <span class="button"><i class="fa fa-close"></i></span>
+            </div>
+            <div class="b2">
+          <input type="email" id="mail" placeholder="mail@example.com">  
+          <input type="password" id="password" placeholder="password"> 
+          <input type="button" value="Login" id="submit" onclick="validate()"></button>
+          <span class="forgotpassword">Forgot your password?</span> 
+          <input type="button" value="Register"></span>
+          <div class="vl">
+            <span class="line"></span>
+            <span class="or">OR</span>
+            <span class="line"></span>
+          </div>
+          <a href="#" class="fb btn">
+            <i class="fa fa-facebook fa-fw"></i>
+           </a>
+           <a href="#" class="google btn">
+            <i class="fa fa-google fa-fw"></i>
+          </a>
+          <div class="epam">&lt EPAM LOGIN  &gt</div>
+         </div>
+
+        </div>
+    </body>
+</html>
